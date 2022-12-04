@@ -1,0 +1,112 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright--yellow: hsl(71, 73%, 54%);
+    --light--gray: hsl(204, 43%, 93%);
+    --grayish--blue: hsl(218, 22%, 67%);
+}
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light--gray);
+    min-height: 100vh;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card .first--long--element {
+    padding: 30px;
+}
+.card .first--long--element h1{
+ font-weight: 700;
+ font-size: 32px;
+ color: var(--cyan);
+ margin-bottom: 20px;
+}
+.card .first--long--element .sub--title {
+    color: var(--bright--yellow);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card .first--long--element .content--1 {
+    color: var(--grayish--blue);
+    line-height: 150%;
+}
+.card .second--long--element {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 100%;
+}
+.card .second--long--element     .first--short--element {
+    background-color: var(--cyan);
+    padding: 30px;
+    width: 50%;
+}
+.card .second--long--element .first--short--element h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.card .second--long--element .first--short--element .price p {
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.card .second--long--element .first--short--element p span {
+    font-size: 14px;
+    opacity: .5;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.card .second--long--element .first--short--element .price--subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .8;
+    margin-bottom: 20px;
+}
+.card .second--long--element .first--short--element button {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 5px;
+    background-color: var(--bright--yellow);
+    border: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.103);
+}
+.card .second--long--element .second--short--element {
+    background-color:hsl(176, 78%, 43%);
+    width: 50%;
+    padding: 30px;
+}
+.card .second--long--element .second--short--element h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.card .second--long--element .second--short--element ul {
+    list-style-type: none;
+}
+.card .second--long--element .second--short--element li {
+    opacity: .65;
+    margin-bottom: -.5px;
+}
